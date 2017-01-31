@@ -5,3 +5,5 @@ vendor
 # codeception
 tests/_support/_generated/
 tests/_output/*
+
+tests/_output/*
