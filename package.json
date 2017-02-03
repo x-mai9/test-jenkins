@@ -2,7 +2,7 @@
   "name": "test-jenkins",
   "version": "1.0.0",
   "scripts": {
-    "test": "mocha test"
+    "test": "mocha -R xunit > reports.xml" // Save test results to a xml file using xunit reporter to match junit on Jenkins
   },
   "dependencies": {
     "express": "^4.13.3",

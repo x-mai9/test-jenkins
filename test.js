@@ -21,6 +21,6 @@ describe('these should obviously pass', function() {
         hw.displayText().should.equal('hi');
     })
     it('should fail the whole test suite', function() {
-        assert.equal(2, 2);
+        assert.equal(2, 1);
     })
 });
