@@ -1,4 +1,4 @@
-class TestOne {
+class HelloWorld {
     /**
      * @param {string} text Text to display
      */
@@ -18,3 +18,4 @@ class TestOne {
     }
 }
 
+module.exports = HelloWorld;
