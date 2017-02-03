@@ -11,4 +11,4 @@ WORKDIR /usr/src/test
 ADD . /usr/src/test
 
 # If run the test now, the test report would be permenant to this image -> not necessary?
-RUN npm test
+# RUN npm test
