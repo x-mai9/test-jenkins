@@ -1,0 +1,25 @@
+
+
+  these should obviously pass
+    √ is a sum and will pass
+    √ is a subtraction and will pass
+    √ is not a equal comparison
+    √ should return whatever in HelloWorld
+    1) should fail the whole test suite
+
+
+  4 passing (11ms)
+  1 failing
+
+  1) these should obviously pass should fail the whole test suite:
+
+      AssertionError: 1 == 2
+      + expected - actual
+
+      -1
+      +2
+      
+      at Context.<anonymous> (test.js:24:16)
+
+
+
