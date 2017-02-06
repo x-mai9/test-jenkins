@@ -25,8 +25,8 @@ describe('these should obviously pass', function() {
     })
 });
 
-describe('these should fail', function() {
+describe('these should fail (not now)', function() {
     it('is an incorrect sum', function() {
-        assert.equal(2+1, 4);
+        assert.equal(2+2, 4);
     })
 });
