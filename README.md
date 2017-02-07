@@ -3,7 +3,7 @@
 Jenkins will build the docker image and start a container using that image.  
 It then run the test inside container, log the result, and copy the result to Jenkins server and display it.  
   
-##To run the test:##  
+##To run the test:  
 1. Run the test in the Dockerfile with npm = test will be run when building the image  
 	-> Test result will be permanent to the image  
     
@@ -16,7 +16,7 @@ target: dependencies
 	command1  
     command2  
 
-##Configure HTML Report using Karma + Webpack##  
+##Configure HTML Report (or Code Coverage using Istanbul) using Karma + Webpack  
 Install karma globally doesn't run using local (dev) dependencies  
 -> Will say cannot find module/plugin when use "karma"  
 -> Install karma-cli: "npm i -g karma-cli"
@@ -24,7 +24,7 @@ Install karma globally doesn't run using local (dev) dependencies
 karma.conf.js: generate by running "karma init [config-filename]"  
 e.g. "karma init karma.conf.js"  
   
-karma.conf.js requires  
+karma.conf.js requires (wait, sometimes it doesn't require plugin field at all)  
 1. plugin: browser Chrome (and any other browser it seems like)  
 2. plugin: framework Mocha (others too?)  
 3. plugin: reporter Html (others??)  
@@ -54,8 +54,9 @@ webpackMiddleware: {
     }
 },
 
+// Don't remove progress - it doesn't run any test if progress is removed
+reporters: ['progress', 'coverage', 'html'],
 // For html reporter
-reporters: ['progress', 'html'],
 htmlReporter: {
 	outputFile: './test-report.html',
 	// Optional 
@@ -65,9 +66,14 @@ htmlReporter: {
     useCompactStyle: true,
     useLegacyStyle: true
 },
+// For coverage reporter
+coverageReporter = {
+  type : 'html',
+  dir : 'coverage/'
+}
 ```  
   
-##Confiregure webpack.conf.js *(not really understand this)*##  
+##Configure webpack.conf.js *(not really understand this)*  
 ```javascript
 module.exports = {
 	/* 
