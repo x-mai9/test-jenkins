@@ -93,6 +93,6 @@ module.exports = {
 ``` 
   
 Code coverage with Istanbul may not display the coverage result  
---> Have to config some stuffs with babel?!  
+--> Have to config some stuffs with babel?  
   
 "webpack" in the directory contains HelloWorld.js to run the config.  
