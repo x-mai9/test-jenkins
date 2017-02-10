@@ -1,14 +1,8 @@
 class LinterFalse {
-	/**
-	 * @param {string} text Text to display
-	 */
-   constructor(text) {
+	constructor(text) {
 		this.text = text;
 	}
 
-	/**
-	 * @param {string} text Text to set
-	 */
     setText(text) {
 		this.text = text;
 	}
@@ -16,4 +10,8 @@ class LinterFalse {
 	displayText() {
 		return this.text;
 	}
+}
+
+function needJsDoc() {
+	return null;
 }
