@@ -1,0 +1,19 @@
+{
+	"env": {
+		"es6": true,
+		"browser": true
+	},
+	// add your custom rules here
+	"rules": {
+		"indent": ["error", "tab"],
+		"no-trailing-spaces": "error",
+		"require-jsdoc": ["warn", {
+			"require": {
+				"FunctionDeclaration": true,
+				"MethodDefinition": true,
+				"ClassDeclaration": true,
+				"ArrowFunctionExpression": true
+			}
+		}]
+	}
+}

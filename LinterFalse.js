@@ -9,10 +9,10 @@ class LinterFalse {
 	/**
 	 * @param {string} text Text to set
 	 */
- setText(text) {
+    setText(text) {
 		this.text = text;
 	}
-
+  
 	displayText() {
 		return this.text;
 	}
