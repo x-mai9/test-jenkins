@@ -19,7 +19,7 @@ target: dependencies
 ##Configure HTML Report (or Code Coverage using Istanbul) using Karma + Webpack  
 Install karma globally doesn't run using local (dev) dependencies  
 -> Will say cannot find module/plugin when use "karma"  
--> Remove karma globally (not sure if needed?)
+-> Remove karma globally (needed?)
 -> Install karma-cli: "npm i -g karma-cli"
   
 karma.conf.js: generate by running "karma init [config-filename]"  
