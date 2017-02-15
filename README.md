@@ -1,7 +1,7 @@
 # test-jenkins
   
 Jenkins will build the docker image and start a container using that image.  
-It then run the test inside container, log the result, and copy the result to Jenkins server and display it.  
+It then runs the test inside container, log the result, and copy the result to Jenkins server and display it.  
   
 ##To run the test:  
 1. Run the test in the Dockerfile with npm = test will be run when building the image  
