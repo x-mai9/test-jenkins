@@ -28,7 +28,7 @@ e.g. "karma init karma.conf.js"
 karma.conf.js requires (wait, sometimes it doesn't require plugin field at all)  
 1. plugin: browser Chrome (and any other browser it seems like)  
 2. plugin: framework Mocha (others too?)  
-3. plugin: reporter Html
+3. plugin: reporter Html (others?)
 4. add these following for webpack.config.js  
 
 ```javascript
