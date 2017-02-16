@@ -74,7 +74,7 @@ coverageReporter = {
 }
 ```  
   
-##Configure webpack.conf.js *(not really understand this)*  
+##Configure webpack.conf.js *(read documentation on Webpack for more info)*  
 ```javascript
 module.exports = {
 	/* 
