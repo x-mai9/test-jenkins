@@ -1,5 +1,5 @@
 # test-jenkins
-  test
+  
 Jenkins will build the docker image and start a container using that image.  
 It then runs the test inside container, log the result, and copy the result to Jenkins server and display it.  
   
